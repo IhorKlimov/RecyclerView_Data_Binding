@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RecyclerView Data Binding</string>
+    <string name="message_format">Clicked on %1$s with age: %2$d</string>
+</resources>
