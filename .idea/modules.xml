@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/RecyclerViewDataBinding.iml" filepath="$PROJECT_DIR$/RecyclerViewDataBinding.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RecyclerView_Data_Binding.iml" filepath="$PROJECT_DIR$/RecyclerView_Data_Binding.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
