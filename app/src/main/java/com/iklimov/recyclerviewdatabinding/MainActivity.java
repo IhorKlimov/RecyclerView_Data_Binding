@@ -1,19 +1,15 @@
 package com.iklimov.recyclerviewdatabinding;
 
 import android.content.Context;
-import android.databinding.BindingAdapter;
 import android.databinding.DataBindingUtil;
-import android.databinding.ViewDataBinding;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 
 import com.iklimov.recyclerviewdatabinding.databinding.ActivityMainBinding;
 import com.iklimov.recyclerviewdatabinding.databinding.ListItemBinding;
@@ -37,12 +33,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private class Adapter extends RecyclerView.Adapter<Holder> {
-        List<User> list;
+        List<Movie> list;
 
         public Adapter() {
             list = new ArrayList<>();
             for (int i = 0; i < 10; i++) {
-                list.add(new User("User " + i, 20 + i));
+                list.add(new Movie("Movie " + i, i));
             }
         }
 
@@ -56,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(Holder holder, int position) {
-            User user = list.get(position);
-            holder.binding.setUser(user);
+            Movie m = list.get(position);
+            holder.binding.setMovie(m);
         }
 
         @Override
@@ -69,15 +65,17 @@ public class MainActivity extends AppCompatActivity {
     private class Holder extends RecyclerView.ViewHolder {
         ListItemBinding binding;
 
-        public Holder(View itemView) {
+        Holder(View itemView) {
             super(itemView);
             binding = DataBindingUtil.bind(itemView);
+
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    User user = binding.getUser();
+                    Movie m = binding.getMovie();
+                    m.setRating(5);
                     String message = context.getString(
-                            R.string.message_format, user.name, user.age);
+                            R.string.message_format, m.name);
 
                     Snackbar.make(v, message, Snackbar.LENGTH_SHORT)
                             .show();

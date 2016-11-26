@@ -16,20 +16,30 @@
 
 package com.iklimov.recyclerviewdatabinding;
 
-public class User {
-    String name;
-    int age;
+import android.databinding.BaseObservable;
+import android.databinding.Bindable;
 
-    public User(String name, int age) {
+public class Movie extends BaseObservable {
+    String name;
+    int rating;
+
+    public Movie(String name, int rating) {
         this.name = name;
-        this.age = age;
+        this.rating = rating;
     }
 
+    @Bindable
     public String getName() {
         return name;
     }
 
-    public int getAge() {
-        return age;
+    @Bindable
+    public int getRating() {
+        return rating;
+    }
+
+    public void setRating(int newRating) {
+        rating = newRating;
+        notifyPropertyChanged(BR.rating);
     }
 }
