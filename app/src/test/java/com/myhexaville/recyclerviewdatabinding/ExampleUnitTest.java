@@ -1,4 +1,4 @@
-package com.iklimov.recyclerviewdatabinding;
+package com.myhexaville.recyclerviewdatabinding;
 
 import org.junit.Test;
 

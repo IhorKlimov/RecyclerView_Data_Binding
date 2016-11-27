@@ -6,7 +6,7 @@
 
         <variable
             name="movie"
-            type="com.iklimov.recyclerviewdatabinding.Movie" />
+            type="com.myhexaville.recyclerviewdatabinding.Movie" />
 
     </data>
 
@@ -16,7 +16,7 @@
         android:layout_marginBottom="@dimen/activity_vertical_margin"
         android:layout_marginTop="@dimen/activity_vertical_margin"
         android:orientation="vertical"
-        tools:context="com.iklimov.recyclerviewdatabinding.MainActivity">
+        tools:context="com.myhexaville.recyclerviewdatabinding.MainActivity">
 
         <TextView
             android:layout_width="wrap_content"

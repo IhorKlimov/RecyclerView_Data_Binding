@@ -1,4 +1,4 @@
-package com.iklimov.recyclerviewdatabinding;
+package com.myhexaville.recyclerviewdatabinding;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

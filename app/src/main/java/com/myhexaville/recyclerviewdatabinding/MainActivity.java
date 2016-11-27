@@ -1,4 +1,4 @@
-package com.iklimov.recyclerviewdatabinding;
+package com.myhexaville.recyclerviewdatabinding;
 
 import android.content.Context;
 import android.databinding.DataBindingUtil;
@@ -11,8 +11,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.iklimov.recyclerviewdatabinding.databinding.ActivityMainBinding;
-import com.iklimov.recyclerviewdatabinding.databinding.ListItemBinding;
+import com.myhexaville.recyclerviewdatabinding.databinding.ActivityMainBinding;
+import com.myhexaville.recyclerviewdatabinding.databinding.ListItemBinding;
 
 import java.util.ArrayList;
 import java.util.List;

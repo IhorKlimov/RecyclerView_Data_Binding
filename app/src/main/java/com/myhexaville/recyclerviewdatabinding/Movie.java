@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.iklimov.recyclerviewdatabinding;
+package com.myhexaville.recyclerviewdatabinding;
 
 import android.databinding.BaseObservable;
 import android.databinding.Bindable;
