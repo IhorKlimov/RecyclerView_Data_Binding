@@ -13,7 +13,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "com.iklimov.recyclerviewdatabinding"
+        applicationId "com.myhexaville.recyclerviewdatabinding"
         minSdkVersion 11
         targetSdkVersion 25
         versionCode 1
