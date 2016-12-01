@@ -3,4 +3,6 @@
     <string name="message_format">Set rating of %1$s</string>
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_activity_ass">ASS</string>
+    <string name="title_activity_list">ListActivity</string>
+    <string name="action_settings">Settings</string>
 </resources>
